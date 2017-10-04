@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %> </head>
+  <body class="<%= page %>">
+  	<% include partials/template/header.ejs %>
+  	<section class="layout">
+  		<div class="primary">
+  			<% include partials/content/speakerslist.ejs %>
+      	</div><!-- primary -->
+      	<aside class="secondary">
+      		<% include partials/content/nextmeeting.ejs %>
+  			<% include partials/content/artworklist.ejs %>
+
+        </aside><!-- secondary -->
+  	</section><!-- layout -->
+<!--    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
